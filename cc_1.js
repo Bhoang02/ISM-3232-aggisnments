@@ -17,3 +17,56 @@ function calcTip(bill) {
 let Testbill = 100 ;
 let Testtip = calcTip(bill);
 console.log(`$${Testbill + Testtip}.`);
+
+// 4. utilize arrays
+function calcTotal(bills,tips)  {
+    const Total = bills + tips
+    return Total
+}
+
+const bills = [275,40,430]
+// const tips = function calcTip(bills)
+
+const tips = []
+for (let i = 0; i < bills.length; i++) {
+const currentTip = calcTip(bills[i])
+tips.push(currentTip)
+}
+
+
+
+
+console.log(tips)
+
+
+const totals = []
+for (let i = 0; i < bills.length; i++) {
+const currentTotals = calcTip(bills[i]) + bills[i]
+totals.push(currentTotals)
+}
+
+console.log(totals)
+
+//data set 2
+
+const bills2 = [125,555,44]
+// const tips = function calcTip(bills)
+
+const tips2 = []
+for (let i = 0; i < bills2.length; i++) {
+const currentTip = calcTip(bills2[i])
+tips2.push(currentTip)
+}
+
+
+
+console.log(tips)
+console.log(tips2)
+
+const totals2 = []
+for (let i = 0; i < bills.length; i++) {
+const currentTotals = calcTip(bills2[i]) + bills2[i]
+totals2.push(currentTotals)
+}
+
+console.log(totals2)
